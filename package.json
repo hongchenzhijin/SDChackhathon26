@@ -1,0 +1,15 @@
+{
+  "name": "futureready-compass",
+  "version": "0.1.0",
+  "description": "AI-era career compass: live AI-trend signals, explainable future-role matching, reskilling pathways and SDG mapping. Hackathon prototype.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server.js",
+    "refresh": "node scripts/refresh-trends.js",
+    "backfill": "node scripts/refresh-trends.js --as-of",
+    "test": "node --test test/*.test.js"
+  }
+}

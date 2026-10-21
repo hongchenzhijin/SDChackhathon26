@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FutureReady Compass</title>
+  <meta name="description" content="AI-era career compass: live AI-trend signals, explainable future-role matching, reskilling pathways and SDG mapping.">
+  <meta name="theme-color" content="#7c3aed">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c3aed'/%3E%3Cstop offset='1' stop-color='%23f97316'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='9' fill='url(%23g)'/%3E%3Cpath d='M16 6l4 10-4 10-4-10z' fill='white'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <a class="brand" href="#profile">
+        <span class="logo"><svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true"><circle cx="16" cy="16" r="13" fill="none" stroke="#fff" stroke-width="2" opacity=".7"/><path d="M16 5l4.5 11L16 27l-4.5-11z" fill="#fff"/><circle cx="16" cy="16" r="2" fill="#7c3aed"/></svg></span>
+        <span><strong>FutureReady Compass</strong><span class="tag-line" data-i18n="tagline"></span></span>
+      </a>
+      <div class="hero-controls" role="region" aria-label="Data and language">
+        <span class="data-pill"><span class="live-dot" aria-hidden="true"></span><span data-i18n="snapshot"></span>
+          <select id="snapshot" aria-label="Trend data snapshot"></select></span>
+        <button id="refresh" class="btn small ghost" type="button"></button>
+        <label class="lang"><span class="sr-only">Language</span>
+          <select id="lang">
+            <option value="en">English</option>
+            <option value="ms">Bahasa Malaysia</option>
+            <option value="zh">中文</option>
+          </select>
+        </label>
+      </div>
+      <div class="freshness" id="freshness"></div>
+    </div>
+  </header>
+
+  <div class="tabs-wrap"><nav class="tabs" id="tabs" aria-label="Sections"></nav></div>
+
+  <main id="view" tabindex="-1"></main>
+
+  <footer class="foot">
+    <div class="foot-card">
+      <p><strong>Human-centred AI:</strong> FutureReady Compass supports career decisions; it does not make hiring decisions or replace advice from a person.
+        Every score comes from a transparent formula over the cited sources in <a href="#method">Data &amp; Method</a>. Optional AI models can read CVs,
+        forecast trends and rephrase results in plain language, but they never change a score.
+        Demo profiles are synthetic. <span data-i18n="estimate_note"></span></p>
+    </div>
+  </footer>
+
+  <div id="tooltip" role="tooltip" hidden></div>
+  <div id="toast" role="status" aria-live="polite" hidden></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

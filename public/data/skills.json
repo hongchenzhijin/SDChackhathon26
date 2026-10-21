@@ -1,0 +1,327 @@
+{
+  "_about": "Skills taxonomy curated by the team. 'wef' is the baseline direction taken from the WEF Future of Jobs Report 2025 (only set to +1/-1 where the report names the skill or a job built on it; otherwise 0 = neutral prior). 'aiExposure' (how much of the skill's tasks AI can automate) and 'aiComplement' (how much AI raises demand for the skill) are team assumptions on a 0-1 scale, informed by the ILO 2023 generative-AI exposure study; they are shown to users as assumptions, not data. 'signal.hn' is the Hacker News search phrase; 'signal.jobs' is the regex used to count mentions in live job postings.",
+  "levels": ["None", "Basic", "Working", "Advanced"],
+  "categories": {
+    "ai": "AI & Data",
+    "digital": "Digital & Tech",
+    "green": "Green & Sustainability",
+    "health": "Health & Care",
+    "human": "Human & Cognitive",
+    "business": "Business & Service",
+    "routine": "Routine (AI-exposed)"
+  },
+  "skills": [
+    {
+      "id": "ai_literacy", "name": "AI literacy & everyday AI tools", "category": "ai",
+      "signal": { "hn": "\"AI tools\"", "jobs": "\\b(ai tools?|generative ai|genai|chatgpt|copilot|ki-tools?)\\b" },
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: 'AI and big data' is the fastest-growing skill; 'technological literacy' is #3." },
+      "aiExposure": 0.1, "aiComplement": 1.0, "hoursPerLevel": 15, "prereqs": [],
+      "sdgs": [{ "goal": 4, "why": "Basic AI literacy is now part of quality, relevant education for all ages." }, { "goal": 10, "why": "Closing the gap between the 56% who use AI and the 26% trained reduces digital inequality." }],
+      "cvKeywords": ["chatgpt", "copilot", "gemini", "generative ai", "genai", "ai tools", "artificial intelligence", "claude"]
+    },
+    {
+      "id": "prompt_engineering", "name": "Prompt engineering & generative AI workflows", "category": "ai",
+      "signal": { "hn": "\"prompt engineering\"", "jobs": "\\b(prompt engineering|prompting|prompt design|llm prompts?)\\b" },
+      "wef": { "direction": 1, "note": "Part of 'AI and big data', WEF FoJ 2025 fastest-growing skill." },
+      "aiExposure": 0.35, "aiComplement": 0.9, "hoursPerLevel": 10, "prereqs": ["ai_literacy"],
+      "sdgs": [{ "goal": 8, "why": "Lets workers use AI to raise their productivity instead of being replaced by it." }, { "goal": 9, "why": "Drives AI-enabled innovation in local firms and SMEs." }],
+      "cvKeywords": ["prompt engineering", "prompt", "prompting", "midjourney", "stable diffusion"]
+    },
+    {
+      "id": "machine_learning", "name": "Machine learning", "category": "ai",
+      "signal": { "hn": "\"machine learning\"", "jobs": "\\b(machine learning|ml engineer|deep learning|pytorch|tensorflow|scikit-learn|maschinelles lernen)\\b" },
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: AI & machine-learning specialists are among the fastest-growing jobs." },
+      "aiExposure": 0.2, "aiComplement": 1.0, "hoursPerLevel": 40, "prereqs": ["python", "statistics"],
+      "sdgs": [{ "goal": 9, "why": "Core capability for research, innovation and modern industry." }],
+      "cvKeywords": ["machine learning", "deep learning", "pytorch", "tensorflow", "scikit-learn", "sklearn", "neural network"]
+    },
+    {
+      "id": "llm_engineering", "name": "LLM apps, RAG & AI agents", "category": "ai",
+      "signal": { "hn": "\"AI agents\"", "jobs": "\\b(llms?|large language models?|rag|retrieval[- ]augmented|ai agents?|langchain|llamaindex|agentic)\\b" },
+      "wef": { "direction": 1, "note": "Part of 'AI and big data', WEF FoJ 2025 fastest-growing skill." },
+      "aiExposure": 0.2, "aiComplement": 1.0, "hoursPerLevel": 30, "prereqs": ["python", "prompt_engineering"],
+      "sdgs": [{ "goal": 9, "why": "Builds the AI products and services of the next economy." }, { "goal": 8, "why": "High-value digital jobs with strong wage growth." }],
+      "cvKeywords": ["llm", "langchain", "rag", "retrieval augmented", "openai api", "ai agent", "vector database"]
+    },
+    {
+      "id": "responsible_ai", "name": "Responsible AI, ethics & governance", "category": "ai",
+      "signal": { "hn": "\"AI safety\"", "jobs": "\\b(responsible ai|ai ethics|ai governance|ai act|ai safety|model risk|data protection|gdpr|pdpa|datenschutz)\\b" },
+      "wef": { "direction": 0, "note": "No explicit WEF direction; neutral prior, outlook driven by live signals." },
+      "aiExposure": 0.1, "aiComplement": 0.9, "hoursPerLevel": 20, "prereqs": ["ai_literacy"],
+      "sdgs": [{ "goal": 16, "why": "Accountable and transparent institutions as AI makes decisions." }, { "goal": 10, "why": "Prevents automated discrimination by age, gender, race or background." }, { "goal": 5, "why": "Checks AI systems for gender bias." }],
+      "cvKeywords": ["ai ethics", "responsible ai", "ai governance", "pdpa", "gdpr", "data protection", "compliance", "audit", "risk management"]
+    },
+    {
+      "id": "data_analysis", "name": "Data analysis & visualisation", "category": "ai",
+      "signal": { "hn": "\"data analysis\"", "jobs": "\\b(data analy[sz](is|t|tics)|power bi|tableau|looker|datenanalyse|business intelligence)\\b" },
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: data analysts and scientists are among the fastest-growing jobs." },
+      "aiExposure": 0.4, "aiComplement": 0.7, "hoursPerLevel": 30, "prereqs": ["spreadsheets"],
+      "sdgs": [{ "goal": 17, "why": "Data capacity is a target of SDG 17 (17.18) for monitoring all the goals." }, { "goal": 9, "why": "Evidence-based decisions in industry and public services." }],
+      "cvKeywords": ["data analysis", "data analytics", "power bi", "tableau", "dashboard", "pandas", "visualisation", "visualization", "reporting"]
+    },
+    {
+      "id": "statistics", "name": "Statistics & quantitative reasoning", "category": "ai",
+      "signal": { "hn": "\"statistics\"", "jobs": "\\b(statistics|statistical|statistik|regression|a/b test)\\b" },
+      "wef": { "direction": 0, "note": "No explicit WEF direction; neutral prior." },
+      "aiExposure": 0.3, "aiComplement": 0.6, "hoursPerLevel": 25, "prereqs": [],
+      "sdgs": [{ "goal": 4, "why": "Numeracy is a foundation of quality education (target 4.6)." }, { "goal": 17, "why": "Statistical capacity underpins SDG monitoring." }],
+      "cvKeywords": ["statistics", "statistical", "regression", "spss", "hypothesis testing", "econometrics"]
+    },
+    {
+      "id": "data_engineering", "name": "Big data & data engineering", "category": "ai",
+      "signal": { "hn": "\"data engineering\"", "jobs": "\\b(data engineer(ing)?|etl|data pipelines?|spark|airflow|data warehouse|snowflake|databricks|dbt)\\b" },
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: big data specialists and data warehousing specialists are among the fastest-growing jobs." },
+      "aiExposure": 0.3, "aiComplement": 0.8, "hoursPerLevel": 35, "prereqs": ["python", "sql"],
+      "sdgs": [{ "goal": 9, "why": "Data infrastructure is digital infrastructure for industry and government." }],
+      "cvKeywords": ["etl", "data pipeline", "spark", "airflow", "data warehouse", "databricks", "snowflake", "bigquery"]
+    },
+    {
+      "id": "sql", "name": "SQL & databases", "category": "digital",
+      "signal": { "hn": "\"SQL\"", "jobs": "\\b(sql|postgres(ql)?|mysql|database)\\b" },
+      "wef": { "direction": 0, "note": "No explicit WEF direction; neutral prior." },
+      "aiExposure": 0.45, "aiComplement": 0.5, "hoursPerLevel": 15, "prereqs": [],
+      "sdgs": [{ "goal": 9, "why": "Reliable information systems for organisations of every size." }],
+      "cvKeywords": ["sql", "mysql", "postgresql", "database", "oracle db", "sql server"]
+    },
+    {
+      "id": "python", "name": "Python programming", "category": "digital",
+      "signal": { "hn": "\"Python\"", "jobs": "\\bpython\\b" },
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: software and applications developers are among the fastest-growing jobs." },
+      "aiExposure": 0.45, "aiComplement": 0.6, "hoursPerLevel": 30, "prereqs": [],
+      "sdgs": [{ "goal": 9, "why": "General-purpose programming skill for innovation and automation." }],
+      "cvKeywords": ["python", "jupyter", "pandas", "numpy"]
+    },
+    {
+      "id": "web_dev", "name": "Web & app development", "category": "digital",
+      "signal": { "hn": "\"web development\"", "jobs": "\\b(javascript|typescript|react|frontend|front-end|full[- ]?stack|web develop(er|ment)|node\\.?js)\\b" },
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: software and applications developers are among the fastest-growing jobs." },
+      "aiExposure": 0.5, "aiComplement": 0.5, "hoursPerLevel": 40, "prereqs": [],
+      "sdgs": [{ "goal": 9, "why": "Builds the digital services businesses and governments run on." }, { "goal": 8, "why": "Enables SMEs and micro-entrepreneurs to sell online." }],
+      "cvKeywords": ["javascript", "typescript", "react", "html", "css", "web development", "node.js", "flutter", "android", "ios"]
+    },
+    {
+      "id": "cloud", "name": "Cloud computing", "category": "digital",
+      "signal": { "hn": "\"cloud computing\"", "jobs": "\\b(aws|azure|gcp|google cloud|cloud computing|kubernetes|docker)\\b" },
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: 'technological literacy' is the #3 fastest-growing skill; DevOps engineers are a fast-growing job." },
+      "aiExposure": 0.3, "aiComplement": 0.7, "hoursPerLevel": 25, "prereqs": [],
+      "sdgs": [{ "goal": 9, "why": "Shared digital infrastructure lowers the cost of innovation." }],
+      "cvKeywords": ["aws", "azure", "gcp", "google cloud", "docker", "kubernetes", "cloud"]
+    },
+    {
+      "id": "cybersecurity", "name": "Cybersecurity", "category": "digital",
+      "signal": { "hn": "\"cybersecurity\"", "jobs": "\\b(cyber ?security|information security|infosec|soc analyst|penetration test|it-sicherheit|siem)\\b" },
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: 'networks and cybersecurity' is the #2 fastest-growing skill." },
+      "aiExposure": 0.2, "aiComplement": 0.8, "hoursPerLevel": 35, "prereqs": [],
+      "sdgs": [{ "goal": 16, "why": "Protects institutions, citizens and their data." }, { "goal": 9, "why": "Resilient digital infrastructure (target 9.1)." }],
+      "cvKeywords": ["cybersecurity", "cyber security", "information security", "firewall", "siem", "penetration testing", "iso 27001"]
+    },
+    {
+      "id": "ux_design", "name": "UX/UI design (human-centred)", "category": "digital",
+      "signal": { "hn": "\"UX design\"", "jobs": "\\b(ux|ui/ux|user experience|figma|product design(er)?|interaction design)\\b" },
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: UI and UX designers are among the fastest-growing jobs." },
+      "aiExposure": 0.4, "aiComplement": 0.6, "hoursPerLevel": 35, "prereqs": [],
+      "sdgs": [{ "goal": 10, "why": "Accessible, inclusive design widens who can use digital services." }, { "goal": 9, "why": "Better products and public services." }],
+      "cvKeywords": ["ux", "ui design", "user experience", "figma", "wireframe", "prototype", "usability"]
+    },
+    {
+      "id": "iot", "name": "IoT & embedded systems", "category": "digital",
+      "signal": { "hn": "\"IoT\"", "jobs": "\\b(iot|internet of things|embedded|plc|scada|arduino|raspberry pi|sensors?)\\b" },
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: Internet of Things specialists are among the fastest-growing jobs." },
+      "aiExposure": 0.25, "aiComplement": 0.7, "hoursPerLevel": 35, "prereqs": [],
+      "sdgs": [{ "goal": 11, "why": "Smart buildings, transport and utilities for liveable cities." }, { "goal": 9, "why": "Industry 4.0 and smart manufacturing." }],
+      "cvKeywords": ["iot", "internet of things", "embedded", "arduino", "raspberry pi", "plc", "scada", "sensor"]
+    },
+    {
+      "id": "fintech", "name": "FinTech & digital finance", "category": "business",
+      "signal": { "hn": "\"fintech\"", "jobs": "\\b(fintech|digital banking|payments?|e-?wallet|blockchain|open banking)\\b" },
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: FinTech engineers are among the fastest-growing jobs." },
+      "aiExposure": 0.35, "aiComplement": 0.7, "hoursPerLevel": 30, "prereqs": [],
+      "sdgs": [{ "goal": 10, "why": "Digital finance extends banking to the unbanked and underbanked." }, { "goal": 8, "why": "Access to financial services for SMEs (target 8.10)." }],
+      "cvKeywords": ["fintech", "digital banking", "payments", "e-wallet", "ewallet", "blockchain", "duitnow", "banking"]
+    },
+    {
+      "id": "digital_marketing", "name": "Digital marketing & content", "category": "business",
+      "signal": { "hn": "\"digital marketing\"", "jobs": "\\b(digital marketing|seo|sem|social media|content marketing|performance marketing|marketing)\\b" },
+      "wef": { "direction": 0, "note": "No explicit WEF direction; neutral prior." },
+      "aiExposure": 0.6, "aiComplement": 0.4, "hoursPerLevel": 20, "prereqs": [],
+      "sdgs": [{ "goal": 8, "why": "Helps local businesses and entrepreneurs reach markets." }],
+      "cvKeywords": ["digital marketing", "seo", "social media", "content creation", "copywriting", "google ads", "facebook ads", "tiktok"]
+    },
+    {
+      "id": "spreadsheets", "name": "Spreadsheets & digital office tools", "category": "business",
+      "signal": { "hn": "\"spreadsheet\"", "jobs": "\\b(excel|spreadsheets?|google sheets|ms office|microsoft office)\\b" },
+      "wef": { "direction": 0, "note": "No explicit WEF direction; neutral prior." },
+      "aiExposure": 0.55, "aiComplement": 0.3, "hoursPerLevel": 10, "prereqs": [],
+      "sdgs": [{ "goal": 8, "why": "Baseline digital skill for most office work." }],
+      "cvKeywords": ["excel", "spreadsheet", "google sheets", "microsoft office", "ms office", "vlookup", "pivot"]
+    },
+    {
+      "id": "renewable_energy", "name": "Renewable energy systems (solar, storage)", "category": "green",
+      "signal": { "hn": "\"renewable energy\"", "jobs": "\\b(renewable|solar|photovoltaic|pv|wind energy|battery storage|erneuerbare|energy transition)\\b" },
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: renewable energy engineers are among the fastest-growing jobs; 'environmental stewardship' is a top-10 rising skill." },
+      "aiExposure": 0.15, "aiComplement": 0.5, "hoursPerLevel": 40, "prereqs": [],
+      "sdgs": [{ "goal": 7, "why": "Directly expands affordable, clean energy." }, { "goal": 13, "why": "Cuts emissions from the power sector." }],
+      "cvKeywords": ["solar", "renewable", "photovoltaic", "pv system", "energy efficiency", "electrical engineering", "wireman", "chargeman"]
+    },
+    {
+      "id": "sustainability_reporting", "name": "Sustainability & ESG reporting", "category": "green",
+      "signal": { "hn": "\"sustainability\"", "jobs": "\\b(esg|sustainability|nachhaltigkeit|carbon accounting|ghg|csrd|net[- ]zero)\\b" },
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: 'environmental stewardship' is a top-10 fastest-growing skill." },
+      "aiExposure": 0.35, "aiComplement": 0.5, "hoursPerLevel": 25, "prereqs": [],
+      "sdgs": [{ "goal": 12, "why": "Companies report and reduce their impacts (target 12.6)." }, { "goal": 13, "why": "Carbon accounting is the first step to climate action." }],
+      "cvKeywords": ["esg", "sustainability", "carbon", "ghg", "net zero", "csr", "environmental"]
+    },
+    {
+      "id": "ev_tech", "name": "Electric vehicle & smart mobility tech", "category": "green",
+      "signal": { "hn": "\"electric vehicle\"", "jobs": "\\b(electric vehicles?|ev charging|e-?mobility|battery systems?|elektromobilit)\\b" },
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: autonomous and electric vehicle specialists are among the fastest-growing jobs." },
+      "aiExposure": 0.2, "aiComplement": 0.5, "hoursPerLevel": 40, "prereqs": [],
+      "sdgs": [{ "goal": 11, "why": "Cleaner urban transport (target 11.2)." }, { "goal": 7, "why": "Electrification paired with clean power." }, { "goal": 13, "why": "Reduces transport emissions." }],
+      "cvKeywords": ["electric vehicle", "ev charging", "automotive", "mechanic", "battery", "charging", "mechanical engineering"]
+    },
+    {
+      "id": "precision_agriculture", "name": "Smart & precision agriculture", "category": "green",
+      "signal": { "hn": "\"agriculture\"", "jobs": "\\b(agri(culture|tech)|precision farming|agronom|landwirtschaft|farm)\\b" },
+      "wef": { "direction": 0, "note": "No explicit WEF skill direction; neutral prior." },
+      "aiExposure": 0.2, "aiComplement": 0.6, "hoursPerLevel": 35, "prereqs": [],
+      "sdgs": [{ "goal": 2, "why": "Raises yields and smallholder incomes (target 2.3)." }, { "goal": 12, "why": "Less water, fertiliser and waste per unit of food." }, { "goal": 15, "why": "Reduces pressure on land and forests." }],
+      "cvKeywords": ["agriculture", "agritech", "farming", "plantation", "agronomy", "drone", "fertigation"]
+    },
+    {
+      "id": "climate_data", "name": "Climate & environmental data", "category": "green",
+      "signal": { "hn": "\"climate change\"", "jobs": "\\b(climate|environmental data|gis|remote sensing|emissions? data|umwelt)\\b" },
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: 'environmental stewardship' is a top-10 rising skill; environmental engineers are a fast-growing job." },
+      "aiExposure": 0.25, "aiComplement": 0.7, "hoursPerLevel": 30, "prereqs": ["data_analysis"],
+      "sdgs": [{ "goal": 13, "why": "Measuring climate risk is required to act on it." }, { "goal": 14, "why": "Ocean and coastal monitoring." }, { "goal": 15, "why": "Forest and land-use monitoring." }],
+      "cvKeywords": ["climate", "gis", "remote sensing", "arcgis", "qgis", "environmental science", "hydrology"]
+    },
+    {
+      "id": "health_informatics", "name": "Digital health & health informatics", "category": "health",
+      "signal": { "hn": "\"healthcare\"", "jobs": "\\b(health ?informatics|digital health|telehealth|telemedicine|ehr|emr|hl7|fhir|healthcare)\\b" },
+      "wef": { "direction": 0, "note": "No explicit WEF direction; neutral prior." },
+      "aiExposure": 0.3, "aiComplement": 0.7, "hoursPerLevel": 30, "prereqs": [],
+      "sdgs": [{ "goal": 3, "why": "Better, more accessible health services (target 3.8)." }],
+      "cvKeywords": ["health informatics", "telehealth", "telemedicine", "emr", "ehr", "clinical", "hospital", "nursing", "pharmacy"]
+    },
+    {
+      "id": "caregiving", "name": "Care & patient support", "category": "health",
+      "signal": { "hn": null, "jobs": "\\b(caregiv|care worker|nurs(e|ing)|patient care|elderly care|pflege)\\b" },
+      "wef": { "direction": 0, "note": "No explicit WEF skill direction; neutral prior." },
+      "aiExposure": 0.1, "aiComplement": 0.3, "hoursPerLevel": 30, "prereqs": [],
+      "sdgs": [{ "goal": 3, "why": "Care for an ageing population." }, { "goal": 5, "why": "Recognises and professionalises care work, much of it done by women (target 5.4)." }],
+      "cvKeywords": ["caregiver", "patient care", "aged care", "nurse", "nursing", "patient", "elderly", "childcare"]
+    },
+    {
+      "id": "analytical_thinking", "name": "Analytical thinking", "category": "human",
+      "signal": { "hn": null, "jobs": "\\b(analytical|problem[- ]solving|critical thinking|analytisch)\\b" },
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: analytical thinking is the top core skill employers seek and remains rising." },
+      "aiExposure": 0.2, "aiComplement": 0.7, "hoursPerLevel": 20, "prereqs": [],
+      "sdgs": [{ "goal": 4, "why": "Higher-order thinking is a goal of quality education." }],
+      "cvKeywords": ["analytical", "problem solving", "problem-solving", "critical thinking", "root cause"]
+    },
+    {
+      "id": "creative_thinking", "name": "Creative thinking", "category": "human",
+      "signal": { "hn": null, "jobs": "\\b(creativ|innovative|kreativ)\\w*" },
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: creative thinking is a top-5 fastest-growing skill." },
+      "aiExposure": 0.25, "aiComplement": 0.6, "hoursPerLevel": 20, "prereqs": [],
+      "sdgs": [{ "goal": 9, "why": "Innovation starts with creative problem framing." }, { "goal": 4, "why": "Creativity is a core 21st-century learning outcome." }],
+      "cvKeywords": ["creative", "creativity", "design thinking", "innovation", "ideation"]
+    },
+    {
+      "id": "resilience", "name": "Resilience, flexibility & agility", "category": "human",
+      "signal": { "hn": null, "jobs": "\\b(flexib|adaptab|resilien|agil)\\w*" },
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: resilience, flexibility and agility is a top-5 fastest-growing skill." },
+      "aiExposure": 0.05, "aiComplement": 0.6, "hoursPerLevel": 15, "prereqs": [],
+      "sdgs": [{ "goal": 8, "why": "Adaptable workers stay employed through technology shifts." }],
+      "cvKeywords": ["adaptable", "flexible", "resilient", "agile", "fast learner", "career switch"]
+    },
+    {
+      "id": "lifelong_learning", "name": "Curiosity & lifelong learning", "category": "human",
+      "signal": { "hn": null, "jobs": "\\b(curious|curiosity|eager to learn|continuous learning|growth mindset|lernbereit)\\w*" },
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: curiosity and lifelong learning is a top-10 fastest-growing skill." },
+      "aiExposure": 0.05, "aiComplement": 0.7, "hoursPerLevel": 10, "prereqs": [],
+      "sdgs": [{ "goal": 4, "why": "Lifelong learning opportunities for all is the headline of SDG 4." }],
+      "cvKeywords": ["certificate", "certification", "self-taught", "online course", "coursera", "mooc", "lifelong learning", "continuous learning"]
+    },
+    {
+      "id": "leadership", "name": "Leadership & social influence", "category": "human",
+      "signal": { "hn": null, "jobs": "\\b(leadership|team lead|people manag|mentor|führung)\\w*" },
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: leadership and social influence is a top-10 fastest-growing skill." },
+      "aiExposure": 0.1, "aiComplement": 0.5, "hoursPerLevel": 25, "prereqs": [],
+      "sdgs": [{ "goal": 5, "why": "Building leadership pipelines supports women's equal leadership (target 5.5)." }, { "goal": 8, "why": "Good management raises productivity and job quality." }],
+      "cvKeywords": ["led a team", "team lead", "supervisor", "manager", "leadership", "mentored", "head of"]
+    },
+    {
+      "id": "communication", "name": "Communication & collaboration", "category": "human",
+      "signal": { "hn": null, "jobs": "\\b(communication skills|stakeholder|collaborat|teamwork|kommunikation)\\w*" },
+      "wef": { "direction": 0, "note": "No explicit WEF growth ranking; neutral prior." },
+      "aiExposure": 0.2, "aiComplement": 0.5, "hoursPerLevel": 15, "prereqs": [],
+      "sdgs": [{ "goal": 17, "why": "Partnerships depend on people who can work across organisations." }],
+      "cvKeywords": ["communication", "presentation", "stakeholder", "collaboration", "teamwork", "public speaking", "bilingual", "multilingual"]
+    },
+    {
+      "id": "project_management", "name": "Project & change management", "category": "business",
+      "signal": { "hn": "\"project management\"", "jobs": "\\b(project manag|scrum|agile coach|pmp|change management|projektmanag)\\w*" },
+      "wef": { "direction": 0, "note": "No explicit WEF direction; neutral prior." },
+      "aiExposure": 0.3, "aiComplement": 0.5, "hoursPerLevel": 25, "prereqs": [],
+      "sdgs": [{ "goal": 9, "why": "Delivers infrastructure and digital-transformation projects." }, { "goal": 17, "why": "Coordinates multi-stakeholder programmes." }],
+      "cvKeywords": ["project management", "project manager", "scrum", "pmp", "change management", "coordinat"]
+    },
+    {
+      "id": "teaching", "name": "Teaching, training & digital pedagogy", "category": "human",
+      "signal": { "hn": "\"edtech\"", "jobs": "\\b(teach|trainer|training delivery|instructional design|lecturer|tutor|edtech)\\w*" },
+      "wef": { "direction": 0, "note": "No explicit WEF direction; neutral prior." },
+      "aiExposure": 0.25, "aiComplement": 0.5, "hoursPerLevel": 25, "prereqs": [],
+      "sdgs": [{ "goal": 4, "why": "More qualified teachers and trainers (target 4.c)." }],
+      "cvKeywords": ["teacher", "teaching", "trainer", "lecturer", "tutor", "facilitator", "instructional design", "coaching"]
+    },
+    {
+      "id": "customer_service", "name": "Customer service & relationship care", "category": "business",
+      "signal": { "hn": "\"customer service\"", "jobs": "\\b(customer (service|support|success|experience)|kundenservice|kundenbetreuung)\\b" },
+      "wef": { "direction": 0, "note": "No explicit WEF direction; neutral prior." },
+      "aiExposure": 0.6, "aiComplement": 0.3, "hoursPerLevel": 10, "prereqs": [],
+      "sdgs": [{ "goal": 8, "why": "Service jobs remain a large share of decent employment." }],
+      "cvKeywords": ["customer service", "customer support", "client", "front desk", "call centre", "call center", "counter"]
+    },
+    {
+      "id": "data_entry", "name": "Manual data entry", "category": "routine",
+      "signal": { "hn": "\"data entry\"", "jobs": "\\b(data entry|dateneingabe|typing)\\b" },
+      "wef": { "direction": -1, "note": "WEF FoJ 2025: data entry clerks are among the fastest-declining jobs." },
+      "aiExposure": 0.95, "aiComplement": 0.0, "hoursPerLevel": 5, "prereqs": [],
+      "sdgs": [{ "goal": 8, "why": "At-risk work: transition support protects decent work." }],
+      "cvKeywords": ["data entry", "key in", "typing", "filing", "record keeping"]
+    },
+    {
+      "id": "cash_handling", "name": "Cash handling & teller operations", "category": "routine",
+      "signal": { "hn": null, "jobs": "\\b(cashier|teller|kassierer|cash handling)\\b" },
+      "wef": { "direction": -1, "note": "WEF FoJ 2025: bank tellers, cashiers and ticket clerks are among the fastest-declining jobs." },
+      "aiExposure": 0.85, "aiComplement": 0.0, "hoursPerLevel": 5, "prereqs": [],
+      "sdgs": [{ "goal": 8, "why": "At-risk work: transition support protects decent work." }],
+      "cvKeywords": ["cashier", "teller", "cash handling", "counter transaction"]
+    },
+    {
+      "id": "bookkeeping", "name": "Manual bookkeeping & payroll", "category": "routine",
+      "signal": { "hn": "\"bookkeeping\"", "jobs": "\\b(bookkeep|payroll|accounts (payable|receivable)|buchhalt)\\w*" },
+      "wef": { "direction": -1, "note": "WEF FoJ 2025: accounting, bookkeeping and payroll clerks are among the fastest-declining jobs." },
+      "aiExposure": 0.85, "aiComplement": 0.2, "hoursPerLevel": 10, "prereqs": [],
+      "sdgs": [{ "goal": 8, "why": "At-risk work: transition support protects decent work." }],
+      "cvKeywords": ["bookkeeping", "payroll", "accounts payable", "accounts receivable", "invoice", "ledger", "ubs", "autocount"]
+    },
+    {
+      "id": "admin_support", "name": "Administrative & secretarial support", "category": "routine",
+      "signal": { "hn": null, "jobs": "\\b(administrative assistant|secretary|office assistant|admin assistant|sekretär|büroassistenz)\\w*" },
+      "wef": { "direction": -1, "note": "WEF FoJ 2025: administrative assistants and executive secretaries are among the fastest-declining jobs." },
+      "aiExposure": 0.75, "aiComplement": 0.2, "hoursPerLevel": 10, "prereqs": [],
+      "sdgs": [{ "goal": 8, "why": "At-risk work: transition support protects decent work." }],
+      "cvKeywords": ["administrative", "admin", "secretary", "scheduling", "office management", "clerk", "receptionist"]
+    },
+    {
+      "id": "graphic_production", "name": "Graphic design production", "category": "routine",
+      "signal": { "hn": "\"graphic design\"", "jobs": "\\b(graphic design(er)?|grafikdesign|photoshop|illustrator|canva)\\b" },
+      "wef": { "direction": -1, "note": "WEF FoJ 2025: graphic designers are among the fastest-declining jobs." },
+      "aiExposure": 0.7, "aiComplement": 0.4, "hoursPerLevel": 20, "prereqs": [],
+      "sdgs": [{ "goal": 8, "why": "At-risk work: transition support protects decent work." }],
+      "cvKeywords": ["graphic design", "photoshop", "illustrator", "canva", "indesign", "poster", "banner"]
+    }
+  ]
+}

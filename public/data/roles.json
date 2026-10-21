@@ -1,0 +1,243 @@
+{
+  "_about": "Role profiles curated by the team. Required skill levels use the 0-3 scale in skills.json; 'weight' is how important the skill is to the role (1-3). 'wef' is the baseline outlook from the WEF Future of Jobs Report 2025 (0 = not ranked by WEF, neutral prior). Roles with type 'current' are today's roles used to estimate displacement risk; they are never recommended as future roles.",
+  "sectors": {
+    "tech": "Technology & AI",
+    "finance": "Finance & banking",
+    "green": "Energy & environment",
+    "health": "Health & care",
+    "education": "Education & training",
+    "agri": "Agriculture & food",
+    "creative": "Creative & media",
+    "business": "Business & operations",
+    "public": "Public sector & governance"
+  },
+  "roles": [
+    {
+      "id": "ai_ml_specialist", "type": "future", "title": "AI / Machine Learning Specialist", "sectors": ["tech"],
+      "summary": "Builds, evaluates and maintains machine-learning models that power products and services.",
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: AI and machine-learning specialists are among the fastest-growing jobs." },
+      "skills": [
+        { "id": "machine_learning", "level": 3, "weight": 3 }, { "id": "python", "level": 3, "weight": 3 },
+        { "id": "statistics", "level": 2, "weight": 2 }, { "id": "data_engineering", "level": 1, "weight": 1 },
+        { "id": "responsible_ai", "level": 1, "weight": 1 }, { "id": "analytical_thinking", "level": 2, "weight": 2 }
+      ],
+      "sdgs": [{ "goal": 9, "why": "Creates the AI capability that local industry needs to innovate." }, { "goal": 8, "why": "High-productivity, high-wage digital work." }]
+    },
+    {
+      "id": "genai_developer", "type": "future", "title": "Generative AI Application Developer", "sectors": ["tech"],
+      "summary": "Builds assistants, RAG search and AI-agent workflows on top of large language models, with guardrails.",
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: AI and machine-learning specialists and software developers are among the fastest-growing jobs." },
+      "skills": [
+        { "id": "llm_engineering", "level": 3, "weight": 3 }, { "id": "prompt_engineering", "level": 3, "weight": 2 },
+        { "id": "python", "level": 2, "weight": 2 }, { "id": "web_dev", "level": 2, "weight": 2 },
+        { "id": "cloud", "level": 1, "weight": 1 }, { "id": "responsible_ai", "level": 2, "weight": 2 }
+      ],
+      "sdgs": [{ "goal": 9, "why": "Turns AI research into useful local products and services." }, { "goal": 4, "why": "Many GenAI apps are tutoring, translation and knowledge tools." }]
+    },
+    {
+      "id": "data_analyst", "type": "future", "title": "Data Analyst", "sectors": ["tech", "business", "finance", "public"],
+      "summary": "Turns raw data into dashboards, insights and recommendations that guide decisions.",
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: data analysts and scientists are among the fastest-growing jobs." },
+      "skills": [
+        { "id": "data_analysis", "level": 3, "weight": 3 }, { "id": "sql", "level": 2, "weight": 2 },
+        { "id": "spreadsheets", "level": 2, "weight": 1 }, { "id": "statistics", "level": 2, "weight": 2 },
+        { "id": "ai_literacy", "level": 2, "weight": 1 }, { "id": "communication", "level": 2, "weight": 2 }
+      ],
+      "sdgs": [{ "goal": 17, "why": "Data capacity for monitoring progress on every goal (target 17.18)." }, { "goal": 9, "why": "Evidence-based decisions in industry." }]
+    },
+    {
+      "id": "data_engineer", "type": "future", "title": "Big Data Engineer", "sectors": ["tech"],
+      "summary": "Designs the pipelines and warehouses that collect, clean and serve data at scale.",
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: big data specialists are the fastest-growing job." },
+      "skills": [
+        { "id": "data_engineering", "level": 3, "weight": 3 }, { "id": "sql", "level": 3, "weight": 3 },
+        { "id": "python", "level": 2, "weight": 2 }, { "id": "cloud", "level": 2, "weight": 2 },
+        { "id": "cybersecurity", "level": 1, "weight": 1 }
+      ],
+      "sdgs": [{ "goal": 9, "why": "Builds national and corporate data infrastructure." }]
+    },
+    {
+      "id": "cyber_analyst", "type": "future", "title": "Cybersecurity Analyst", "sectors": ["tech", "finance", "public"],
+      "summary": "Monitors, detects and responds to security threats, including AI-enabled attacks.",
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: security management specialists and information security analysts are among the fastest-growing jobs." },
+      "skills": [
+        { "id": "cybersecurity", "level": 3, "weight": 3 }, { "id": "cloud", "level": 1, "weight": 1 },
+        { "id": "analytical_thinking", "level": 2, "weight": 2 }, { "id": "python", "level": 1, "weight": 1 },
+        { "id": "communication", "level": 1, "weight": 1 }
+      ],
+      "sdgs": [{ "goal": 16, "why": "Protects institutions and citizens from cybercrime." }, { "goal": 9, "why": "Keeps digital infrastructure resilient." }]
+    },
+    {
+      "id": "fintech_analyst", "type": "future", "title": "FinTech & Digital Banking Analyst", "sectors": ["finance", "tech"],
+      "summary": "Designs and improves digital financial products such as e-wallets, digital lending and payments.",
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: FinTech engineers are among the fastest-growing jobs (closest WEF category)." },
+      "skills": [
+        { "id": "fintech", "level": 3, "weight": 3 }, { "id": "data_analysis", "level": 2, "weight": 2 },
+        { "id": "ai_literacy", "level": 2, "weight": 1 }, { "id": "customer_service", "level": 1, "weight": 1 },
+        { "id": "communication", "level": 2, "weight": 1 }, { "id": "responsible_ai", "level": 1, "weight": 1 }
+      ],
+      "sdgs": [{ "goal": 10, "why": "Financial inclusion for unbanked and underbanked communities." }, { "goal": 8, "why": "Access to finance for SMEs and micro-entrepreneurs (target 8.10)." }]
+    },
+    {
+      "id": "ux_designer", "type": "future", "title": "UX/UI Designer for AI Products", "sectors": ["tech", "creative"],
+      "summary": "Designs human-centred, accessible interfaces where people and AI work together.",
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: UI and UX designers are among the fastest-growing jobs." },
+      "skills": [
+        { "id": "ux_design", "level": 3, "weight": 3 }, { "id": "creative_thinking", "level": 2, "weight": 2 },
+        { "id": "communication", "level": 2, "weight": 2 }, { "id": "ai_literacy", "level": 2, "weight": 1 },
+        { "id": "web_dev", "level": 1, "weight": 1 }
+      ],
+      "sdgs": [{ "goal": 10, "why": "Accessible design includes older users and people with disabilities." }, { "goal": 9, "why": "Better digital products and public services." }]
+    },
+    {
+      "id": "responsible_ai_officer", "type": "future", "title": "Responsible AI & Governance Officer", "sectors": ["public", "business", "tech"],
+      "summary": "Checks AI systems for bias, privacy and safety risks and helps organisations govern AI use.",
+      "wef": { "direction": 0, "note": "Emerging role not ranked in WEF FoJ 2025; neutral prior, outlook driven by live signals." },
+      "skills": [
+        { "id": "responsible_ai", "level": 3, "weight": 3 }, { "id": "ai_literacy", "level": 2, "weight": 2 },
+        { "id": "analytical_thinking", "level": 2, "weight": 2 }, { "id": "communication", "level": 2, "weight": 2 },
+        { "id": "project_management", "level": 1, "weight": 1 }
+      ],
+      "sdgs": [{ "goal": 16, "why": "Accountable, transparent institutions in the AI era." }, { "goal": 10, "why": "Prevents AI from discriminating by age, gender or background." }, { "goal": 5, "why": "Audits for gender bias in automated decisions." }]
+    },
+    {
+      "id": "ai_educator", "type": "future", "title": "AI Trainer & Digital Skills Educator", "sectors": ["education"],
+      "summary": "Teaches workers, students and communities to use AI tools safely and productively.",
+      "wef": { "direction": 0, "note": "Not ranked in WEF FoJ 2025; neutral prior." },
+      "skills": [
+        { "id": "teaching", "level": 3, "weight": 3 }, { "id": "ai_literacy", "level": 3, "weight": 3 },
+        { "id": "prompt_engineering", "level": 2, "weight": 2 }, { "id": "communication", "level": 2, "weight": 2 },
+        { "id": "lifelong_learning", "level": 2, "weight": 1 }
+      ],
+      "sdgs": [{ "goal": 4, "why": "Directly delivers relevant skills for employment (target 4.4)." }, { "goal": 10, "why": "Brings AI skills to groups left behind." }, { "goal": 5, "why": "Can target women re-entering the workforce." }]
+    },
+    {
+      "id": "renewable_technician", "type": "future", "title": "Solar & Renewable Energy Technician", "sectors": ["green"],
+      "summary": "Installs, monitors and maintains solar PV and storage systems, increasingly with smart monitoring.",
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: renewable energy engineers are among the fastest-growing jobs (closest WEF category)." },
+      "skills": [
+        { "id": "renewable_energy", "level": 3, "weight": 3 }, { "id": "iot", "level": 1, "weight": 1 },
+        { "id": "analytical_thinking", "level": 1, "weight": 1 }, { "id": "project_management", "level": 1, "weight": 1 },
+        { "id": "data_analysis", "level": 1, "weight": 1 }
+      ],
+      "sdgs": [{ "goal": 7, "why": "Expands access to affordable, clean energy." }, { "goal": 13, "why": "Cuts power-sector emissions." }]
+    },
+    {
+      "id": "ev_specialist", "type": "future", "title": "EV & Smart Mobility Technician", "sectors": ["green", "tech"],
+      "summary": "Services electric vehicles, batteries and charging infrastructure.",
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: autonomous and electric vehicle specialists are among the fastest-growing jobs." },
+      "skills": [
+        { "id": "ev_tech", "level": 3, "weight": 3 }, { "id": "iot", "level": 2, "weight": 2 },
+        { "id": "analytical_thinking", "level": 1, "weight": 1 }, { "id": "customer_service", "level": 1, "weight": 1 }
+      ],
+      "sdgs": [{ "goal": 11, "why": "Cleaner urban transport." }, { "goal": 13, "why": "Lower transport emissions." }, { "goal": 7, "why": "Electrified mobility paired with clean power." }]
+    },
+    {
+      "id": "esg_analyst", "type": "future", "title": "Sustainability & ESG Analyst", "sectors": ["green", "finance", "business"],
+      "summary": "Measures, reports and helps reduce a company's environmental and social impact.",
+      "wef": { "direction": 0, "note": "Not ranked as a job in WEF FoJ 2025 (environmental stewardship is a top-10 rising skill); neutral prior." },
+      "skills": [
+        { "id": "sustainability_reporting", "level": 3, "weight": 3 }, { "id": "data_analysis", "level": 2, "weight": 2 },
+        { "id": "spreadsheets", "level": 2, "weight": 1 }, { "id": "communication", "level": 2, "weight": 2 },
+        { "id": "climate_data", "level": 1, "weight": 1 }
+      ],
+      "sdgs": [{ "goal": 12, "why": "Sustainability reporting by companies (target 12.6)." }, { "goal": 13, "why": "Carbon accounting drives emission cuts." }, { "goal": 17, "why": "Links companies to national SDG commitments." }]
+    },
+    {
+      "id": "agritech_specialist", "type": "future", "title": "Smart Agriculture Technologist", "sectors": ["agri", "green"],
+      "summary": "Uses sensors, drones and data to help farms and plantations produce more with less.",
+      "wef": { "direction": 0, "note": "Not ranked as a job in WEF FoJ 2025; neutral prior." },
+      "skills": [
+        { "id": "precision_agriculture", "level": 3, "weight": 3 }, { "id": "iot", "level": 2, "weight": 2 },
+        { "id": "data_analysis", "level": 1, "weight": 1 }, { "id": "climate_data", "level": 1, "weight": 1 }
+      ],
+      "sdgs": [{ "goal": 2, "why": "Raises yields and smallholder incomes." }, { "goal": 12, "why": "Less water and fertiliser per tonne of food." }, { "goal": 15, "why": "Reduces pressure on forests and land." }]
+    },
+    {
+      "id": "health_informatics_specialist", "type": "future", "title": "Digital Health Informatics Specialist", "sectors": ["health", "tech"],
+      "summary": "Manages health data systems, telehealth platforms and safe use of AI in clinics.",
+      "wef": { "direction": 0, "note": "Not ranked in WEF FoJ 2025; neutral prior." },
+      "skills": [
+        { "id": "health_informatics", "level": 3, "weight": 3 }, { "id": "data_analysis", "level": 2, "weight": 2 },
+        { "id": "sql", "level": 1, "weight": 1 }, { "id": "responsible_ai", "level": 1, "weight": 1 },
+        { "id": "caregiving", "level": 1, "weight": 1 }
+      ],
+      "sdgs": [{ "goal": 3, "why": "Better, more accessible health services (target 3.8)." }, { "goal": 9, "why": "Digital public health infrastructure." }]
+    },
+    {
+      "id": "care_coordinator", "type": "future", "title": "AI-assisted Care Coordinator", "sectors": ["health"],
+      "summary": "Coordinates patient and elderly care, using digital tools for scheduling, monitoring and records.",
+      "wef": { "direction": 0, "note": "Not ranked in WEF FoJ 2025 fastest-growing list; neutral prior." },
+      "skills": [
+        { "id": "caregiving", "level": 3, "weight": 3 }, { "id": "communication", "level": 3, "weight": 2 },
+        { "id": "health_informatics", "level": 1, "weight": 1 }, { "id": "ai_literacy", "level": 1, "weight": 1 },
+        { "id": "resilience", "level": 2, "weight": 1 }
+      ],
+      "sdgs": [{ "goal": 3, "why": "Care for an ageing population." }, { "goal": 5, "why": "Recognises and professionalises care work (target 5.4)." }, { "goal": 10, "why": "Keeps human care accessible as services digitise." }]
+    },
+    {
+      "id": "iot_specialist", "type": "future", "title": "IoT Solutions Specialist", "sectors": ["tech", "green"],
+      "summary": "Connects sensors and machines to the cloud for smart factories, buildings and cities.",
+      "wef": { "direction": 1, "note": "WEF FoJ 2025: Internet of Things specialists are among the fastest-growing jobs." },
+      "skills": [
+        { "id": "iot", "level": 3, "weight": 3 }, { "id": "python", "level": 2, "weight": 2 },
+        { "id": "cloud", "level": 1, "weight": 1 }, { "id": "cybersecurity", "level": 1, "weight": 1 },
+        { "id": "analytical_thinking", "level": 1, "weight": 1 }
+      ],
+      "sdgs": [{ "goal": 11, "why": "Smart city services and utilities." }, { "goal": 9, "why": "Industry 4.0 for Malaysian manufacturing." }]
+    },
+    {
+      "id": "climate_data_scientist", "type": "future", "title": "Climate & Environmental Data Scientist", "sectors": ["green", "tech", "public"],
+      "summary": "Models climate risk, emissions, floods and land use to guide policy and investment.",
+      "wef": { "direction": 0, "note": "Not ranked in WEF FoJ 2025; neutral prior." },
+      "skills": [
+        { "id": "climate_data", "level": 3, "weight": 3 }, { "id": "data_analysis", "level": 2, "weight": 2 },
+        { "id": "python", "level": 2, "weight": 2 }, { "id": "statistics", "level": 2, "weight": 2 },
+        { "id": "machine_learning", "level": 1, "weight": 1 }
+      ],
+      "sdgs": [{ "goal": 13, "why": "Climate risk analysis for adaptation and mitigation." }, { "goal": 14, "why": "Ocean and coastal monitoring." }, { "goal": 15, "why": "Forest and land-use monitoring." }]
+    },
+    {
+      "id": "digital_marketer", "type": "future", "title": "AI-augmented Digital Marketing Strategist", "sectors": ["creative", "business"],
+      "summary": "Plans campaigns and content with AI tools, focusing on strategy, brand and measurement.",
+      "wef": { "direction": 0, "note": "Not ranked in WEF FoJ 2025; neutral prior." },
+      "skills": [
+        { "id": "digital_marketing", "level": 3, "weight": 3 }, { "id": "prompt_engineering", "level": 2, "weight": 2 },
+        { "id": "creative_thinking", "level": 2, "weight": 2 }, { "id": "data_analysis", "level": 1, "weight": 1 }
+      ],
+      "sdgs": [{ "goal": 8, "why": "Helps local SMEs reach new markets." }]
+    },
+    {
+      "id": "cx_specialist", "type": "future", "title": "AI-augmented Customer Experience Specialist", "sectors": ["business", "finance"],
+      "summary": "Handles complex customer cases that AI chatbots escalate, and improves the AI's answers.",
+      "wef": { "direction": 0, "note": "Not ranked in WEF FoJ 2025; neutral prior." },
+      "skills": [
+        { "id": "customer_service", "level": 2, "weight": 2 }, { "id": "communication", "level": 3, "weight": 3 },
+        { "id": "ai_literacy", "level": 2, "weight": 2 }, { "id": "resilience", "level": 2, "weight": 1 },
+        { "id": "prompt_engineering", "level": 1, "weight": 1 }
+      ],
+      "sdgs": [{ "goal": 8, "why": "Keeps service work decent and higher-skilled as AI automates simple queries." }, { "goal": 10, "why": "Human help for customers who struggle with digital channels." }]
+    },
+    {
+      "id": "transformation_manager", "type": "future", "title": "Digital Transformation Project Manager", "sectors": ["business", "public"],
+      "summary": "Leads teams through adopting AI and new digital processes, including reskilling.",
+      "wef": { "direction": 0, "note": "Not ranked in WEF FoJ 2025 (leadership and social influence is a top-10 rising skill); neutral prior." },
+      "skills": [
+        { "id": "project_management", "level": 3, "weight": 3 }, { "id": "leadership", "level": 2, "weight": 2 },
+        { "id": "communication", "level": 2, "weight": 2 }, { "id": "ai_literacy", "level": 2, "weight": 2 },
+        { "id": "resilience", "level": 2, "weight": 1 }
+      ],
+      "sdgs": [{ "goal": 9, "why": "Modernises organisations and infrastructure." }, { "goal": 8, "why": "Manages change so workers are reskilled, not dropped." }, { "goal": 17, "why": "Coordinates partners across the organisation." }]
+    },
+
+    { "id": "bank_teller", "type": "current", "title": "Bank Teller", "sectors": ["finance"], "wef": { "direction": -1, "note": "WEF FoJ 2025: bank tellers and related clerks are among the fastest-declining jobs." }, "skills": [{ "id": "cash_handling", "level": 3, "weight": 3 }, { "id": "customer_service", "level": 2, "weight": 2 }, { "id": "data_entry", "level": 2, "weight": 1 }] },
+    { "id": "data_entry_clerk", "type": "current", "title": "Data Entry Clerk", "sectors": ["business"], "wef": { "direction": -1, "note": "WEF FoJ 2025: data entry clerks are among the fastest-declining jobs." }, "skills": [{ "id": "data_entry", "level": 3, "weight": 3 }, { "id": "spreadsheets", "level": 2, "weight": 2 }] },
+    { "id": "admin_assistant", "type": "current", "title": "Administrative Assistant / Secretary", "sectors": ["business"], "wef": { "direction": -1, "note": "WEF FoJ 2025: administrative assistants and executive secretaries are among the fastest-declining jobs." }, "skills": [{ "id": "admin_support", "level": 3, "weight": 3 }, { "id": "spreadsheets", "level": 2, "weight": 1 }, { "id": "communication", "level": 2, "weight": 1 }] },
+    { "id": "bookkeeping_clerk", "type": "current", "title": "Accounting / Bookkeeping / Payroll Clerk", "sectors": ["finance", "business"], "wef": { "direction": -1, "note": "WEF FoJ 2025: accounting, bookkeeping and payroll clerks are among the fastest-declining jobs." }, "skills": [{ "id": "bookkeeping", "level": 3, "weight": 3 }, { "id": "spreadsheets", "level": 2, "weight": 2 }] },
+    { "id": "cashier", "type": "current", "title": "Cashier / Ticket Clerk", "sectors": ["business"], "wef": { "direction": -1, "note": "WEF FoJ 2025: cashiers and ticket clerks are among the fastest-declining jobs." }, "skills": [{ "id": "cash_handling", "level": 3, "weight": 3 }, { "id": "customer_service", "level": 2, "weight": 2 }] },
+    { "id": "graphic_designer", "type": "current", "title": "Graphic Designer (production)", "sectors": ["creative"], "wef": { "direction": -1, "note": "WEF FoJ 2025: graphic designers are among the fastest-declining jobs." }, "skills": [{ "id": "graphic_production", "level": 3, "weight": 3 }, { "id": "creative_thinking", "level": 2, "weight": 2 }] },
+    { "id": "customer_service_agent", "type": "current", "title": "Call-centre / Customer Service Agent", "sectors": ["business"], "wef": { "direction": 0, "note": "Not ranked in WEF FoJ 2025 lists (telemarketers are among the fastest-declining)." }, "skills": [{ "id": "customer_service", "level": 3, "weight": 3 }, { "id": "communication", "level": 2, "weight": 2 }, { "id": "data_entry", "level": 1, "weight": 1 }] },
+    { "id": "student", "type": "current", "title": "Student / Fresh graduate", "sectors": [], "wef": { "direction": 0, "note": "Not a job category." }, "skills": [] },
+    { "id": "other", "type": "current", "title": "Other / not listed", "sectors": [], "wef": { "direction": 0, "note": "Not a job category." }, "skills": [] }
+  ]
+}

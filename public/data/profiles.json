@@ -1,0 +1,68 @@
+{
+  "_about": "Synthetic demo personas (9 career situations) for testing. Not real people. No age, gender, ethnicity or religion is stored — the engine never asks for them.",
+  "profiles": [
+    {
+      "id": "aisyah", "name": "Aisyah", "emoji": "🏦", "kind": "Routine role at risk",
+      "tagline": "Bank teller, 9 years, worried about branch closures",
+      "currentRole": "bank_teller", "years": 9, "hoursPerWeek": 6,
+      "sectors": ["finance", "education"], "sdgInterests": [10, 5, 8],
+      "skills": { "cash_handling": 3, "customer_service": 3, "data_entry": 2, "spreadsheets": 2, "communication": 2, "fintech": 1, "ai_literacy": 1, "resilience": 2 }
+    },
+    {
+      "id": "weijie", "name": "Wei Jie", "emoji": "🎓", "kind": "Fresh graduate",
+      "tagline": "Fresh mechanical-engineering graduate, interested in clean energy",
+      "currentRole": "student", "years": 0, "hoursPerWeek": 15,
+      "sectors": ["green", "tech"], "sdgInterests": [7, 13, 11],
+      "skills": { "python": 1, "analytical_thinking": 2, "ev_tech": 1, "renewable_energy": 1, "project_management": 1, "statistics": 2, "spreadsheets": 2, "creative_thinking": 1, "lifelong_learning": 2 }
+    },
+    {
+      "id": "kavitha", "name": "Kavitha", "emoji": "🌴", "kind": "Career switcher",
+      "tagline": "Admin assistant at a plantation company, career switcher",
+      "currentRole": "admin_assistant", "years": 12, "hoursPerWeek": 8,
+      "sectors": ["agri", "green"], "sdgInterests": [2, 15, 12],
+      "skills": { "admin_support": 3, "spreadsheets": 2, "communication": 2, "data_entry": 2, "precision_agriculture": 1, "lifelong_learning": 1, "project_management": 1 }
+    },
+    {
+      "id": "daniel", "name": "Daniel", "emoji": "🎨", "kind": "Creative disrupted by AI",
+      "tagline": "Graphic designer, 5 years, seeing AI image tools take over",
+      "currentRole": "graphic_designer", "years": 5, "hoursPerWeek": 10,
+      "sectors": ["creative", "tech"], "sdgInterests": [9, 10, 4],
+      "skills": { "graphic_production": 3, "creative_thinking": 3, "ux_design": 1, "digital_marketing": 2, "web_dev": 1, "ai_literacy": 2, "prompt_engineering": 1, "communication": 2 }
+    },
+    {
+      "id": "farah", "name": "Farah", "emoji": "🎧", "kind": "Service worker",
+      "tagline": "Call-centre agent at a telco, chatbots now answer most calls",
+      "currentRole": "customer_service_agent", "years": 6, "hoursPerWeek": 7,
+      "sectors": ["business", "tech"], "sdgInterests": [8, 10],
+      "skills": { "customer_service": 3, "communication": 3, "data_entry": 2, "spreadsheets": 1, "ai_literacy": 1, "resilience": 2, "digital_marketing": 1 }
+    },
+    {
+      "id": "rajesh", "name": "Rajesh", "emoji": "🧾", "kind": "Finance back-office",
+      "tagline": "Payroll & bookkeeping clerk, accounting software is automating the job",
+      "currentRole": "bookkeeping_clerk", "years": 14, "hoursPerWeek": 6,
+      "sectors": ["finance", "green"], "sdgInterests": [8, 12],
+      "skills": { "bookkeeping": 3, "spreadsheets": 3, "data_entry": 3, "analytical_thinking": 2, "sql": 1, "statistics": 1, "communication": 1, "sustainability_reporting": 1 }
+    },
+    {
+      "id": "meiling", "name": "Mei Ling", "emoji": "⌨️", "kind": "Highly exposed role",
+      "tagline": "Data entry clerk at a logistics firm, curious about data analysis",
+      "currentRole": "data_entry_clerk", "years": 4, "hoursPerWeek": 12,
+      "sectors": ["tech", "business"], "sdgInterests": [9, 8],
+      "skills": { "data_entry": 3, "spreadsheets": 2, "data_analysis": 1, "sql": 1, "python": 1, "analytical_thinking": 1, "lifelong_learning": 2 }
+    },
+    {
+      "id": "hafiz", "name": "Hafiz", "emoji": "🛒", "kind": "Part-time / low-wage",
+      "tagline": "Supermarket cashier studying part-time, wants a tech career",
+      "currentRole": "cashier", "years": 3, "hoursPerWeek": 10,
+      "sectors": ["tech", "public"], "sdgInterests": [4, 8, 16],
+      "skills": { "cash_handling": 2, "customer_service": 2, "web_dev": 1, "cybersecurity": 1, "python": 1, "resilience": 2, "lifelong_learning": 2 }
+    },
+    {
+      "id": "siti", "name": "Siti", "emoji": "🩺", "kind": "Care & health worker",
+      "tagline": "Nursing aide in an elderly-care home, wants to grow in digital health",
+      "currentRole": "other", "years": 8, "hoursPerWeek": 5,
+      "sectors": ["health", "education"], "sdgInterests": [3, 5, 10],
+      "skills": { "caregiving": 3, "communication": 2, "customer_service": 2, "health_informatics": 1, "teaching": 1, "resilience": 3, "spreadsheets": 1 }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "retrievedAt": "2026-10-19T15:13:21.456Z",
+  "source": {
+    "name": "Department of Statistics Malaysia via data.gov.my",
+    "url": "https://data.gov.my/data-catalogue"
+  },
+  "labourForce": {
+    "dataset": "lfs_month",
+    "lf": 17386,
+    "date": "2026-08-01",
+    "p_rate": 71,
+    "u_rate": 2.9,
+    "ep_ratio": 68.9,
+    "lf_outside": 7106,
+    "lf_employed": 16874.4,
+    "lf_unemployed": 511.6
+  },
+  "skillsUnderemployment": {
+    "dataset": "lfs_qtr_sru_age",
+    "date": "2026-04-01",
+    "overallRate": 1948.2,
+    "youth15to24Rate": 476.3
+  }
+}

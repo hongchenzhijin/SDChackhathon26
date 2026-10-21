@@ -1,0 +1,314 @@
+{
+  "id": "2026-04-19-backfill",
+  "asOf": "2026-04-19",
+  "generatedAt": "2026-10-19T14:59:23.396Z",
+  "mode": "backfill",
+  "note": "Historical snapshot rebuilt from timestamped Hacker News data. Live job postings cannot be backfilled, so job demand is unavailable and its weight is redistributed.",
+  "sources": [
+    {
+      "id": "hn",
+      "name": "Hacker News stories (Algolia HN Search API)",
+      "url": "https://hn.algolia.com/api",
+      "kind": "AI & tech discussion momentum",
+      "window": {
+        "recent": [
+          "2025-10-21",
+          "2026-04-19"
+        ],
+        "prior": [
+          "2025-04-24",
+          "2025-10-21"
+        ]
+      },
+      "totals": {
+        "recent": 1583034,
+        "prior": 1580645
+      }
+    },
+    {
+      "id": "wef",
+      "name": "World Economic Forum – Future of Jobs Report 2025",
+      "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
+      "kind": "Baseline skill & job outlook (employer survey, 2025–2030)",
+      "published": "2025-01"
+    }
+  ],
+  "skills": {
+    "ai_literacy": {
+      "hn": {
+        "query": "\"AI tools\"",
+        "recent": 539,
+        "prior": 484
+      },
+      "jobs": null
+    },
+    "prompt_engineering": {
+      "hn": {
+        "query": "\"prompt engineering\"",
+        "recent": 143,
+        "prior": 119
+      },
+      "jobs": null
+    },
+    "machine_learning": {
+      "hn": {
+        "query": "\"machine learning\"",
+        "recent": 217,
+        "prior": 249
+      },
+      "jobs": null
+    },
+    "llm_engineering": {
+      "hn": {
+        "query": "\"AI agents\"",
+        "recent": 3164,
+        "prior": 1017
+      },
+      "jobs": null
+    },
+    "responsible_ai": {
+      "hn": {
+        "query": "\"AI safety\"",
+        "recent": 111,
+        "prior": 48
+      },
+      "jobs": null
+    },
+    "data_analysis": {
+      "hn": {
+        "query": "\"data analysis\"",
+        "recent": 78,
+        "prior": 77
+      },
+      "jobs": null
+    },
+    "statistics": {
+      "hn": {
+        "query": "\"statistics\"",
+        "recent": 157,
+        "prior": 115
+      },
+      "jobs": null
+    },
+    "data_engineering": {
+      "hn": {
+        "query": "\"data engineering\"",
+        "recent": 29,
+        "prior": 40
+      },
+      "jobs": null
+    },
+    "sql": {
+      "hn": {
+        "query": "\"SQL\"",
+        "recent": 633,
+        "prior": 454
+      },
+      "jobs": null
+    },
+    "python": {
+      "hn": {
+        "query": "\"Python\"",
+        "recent": 2800,
+        "prior": 1791
+      },
+      "jobs": null
+    },
+    "web_dev": {
+      "hn": {
+        "query": "\"web development\"",
+        "recent": 53,
+        "prior": 68
+      },
+      "jobs": null
+    },
+    "cloud": {
+      "hn": {
+        "query": "\"cloud computing\"",
+        "recent": 18,
+        "prior": 18
+      },
+      "jobs": null
+    },
+    "cybersecurity": {
+      "hn": {
+        "query": "\"cybersecurity\"",
+        "recent": 238,
+        "prior": 228
+      },
+      "jobs": null
+    },
+    "ux_design": {
+      "hn": {
+        "query": "\"UX design\"",
+        "recent": 13,
+        "prior": 17
+      },
+      "jobs": null
+    },
+    "iot": {
+      "hn": {
+        "query": "\"IoT\"",
+        "recent": 102,
+        "prior": 90
+      },
+      "jobs": null
+    },
+    "fintech": {
+      "hn": {
+        "query": "\"fintech\"",
+        "recent": 106,
+        "prior": 90
+      },
+      "jobs": null
+    },
+    "digital_marketing": {
+      "hn": {
+        "query": "\"digital marketing\"",
+        "recent": 9,
+        "prior": 6
+      },
+      "jobs": null
+    },
+    "spreadsheets": {
+      "hn": {
+        "query": "\"spreadsheet\"",
+        "recent": 169,
+        "prior": 111
+      },
+      "jobs": null
+    },
+    "renewable_energy": {
+      "hn": {
+        "query": "\"renewable energy\"",
+        "recent": 37,
+        "prior": 49
+      },
+      "jobs": null
+    },
+    "sustainability_reporting": {
+      "hn": {
+        "query": "\"sustainability\"",
+        "recent": 177,
+        "prior": 231
+      },
+      "jobs": null
+    },
+    "ev_tech": {
+      "hn": {
+        "query": "\"electric vehicle\"",
+        "recent": 35,
+        "prior": 27
+      },
+      "jobs": null
+    },
+    "precision_agriculture": {
+      "hn": {
+        "query": "\"agriculture\"",
+        "recent": 31,
+        "prior": 39
+      },
+      "jobs": null
+    },
+    "climate_data": {
+      "hn": {
+        "query": "\"climate change\"",
+        "recent": 110,
+        "prior": 165
+      },
+      "jobs": null
+    },
+    "health_informatics": {
+      "hn": {
+        "query": "\"healthcare\"",
+        "recent": 270,
+        "prior": 195
+      },
+      "jobs": null
+    },
+    "caregiving": {
+      "hn": null,
+      "jobs": null
+    },
+    "analytical_thinking": {
+      "hn": null,
+      "jobs": null
+    },
+    "creative_thinking": {
+      "hn": null,
+      "jobs": null
+    },
+    "resilience": {
+      "hn": null,
+      "jobs": null
+    },
+    "lifelong_learning": {
+      "hn": null,
+      "jobs": null
+    },
+    "leadership": {
+      "hn": null,
+      "jobs": null
+    },
+    "communication": {
+      "hn": null,
+      "jobs": null
+    },
+    "project_management": {
+      "hn": {
+        "query": "\"project management\"",
+        "recent": 86,
+        "prior": 71
+      },
+      "jobs": null
+    },
+    "teaching": {
+      "hn": {
+        "query": "\"edtech\"",
+        "recent": 23,
+        "prior": 18
+      },
+      "jobs": null
+    },
+    "customer_service": {
+      "hn": {
+        "query": "\"customer service\"",
+        "recent": 37,
+        "prior": 57
+      },
+      "jobs": null
+    },
+    "data_entry": {
+      "hn": {
+        "query": "\"data entry\"",
+        "recent": 27,
+        "prior": 18
+      },
+      "jobs": null
+    },
+    "cash_handling": {
+      "hn": null,
+      "jobs": null
+    },
+    "bookkeeping": {
+      "hn": {
+        "query": "\"bookkeeping\"",
+        "recent": 18,
+        "prior": 12
+      },
+      "jobs": null
+    },
+    "admin_support": {
+      "hn": null,
+      "jobs": null
+    },
+    "graphic_production": {
+      "hn": {
+        "query": "\"graphic design\"",
+        "recent": 19,
+        "prior": 5
+      },
+      "jobs": null
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "_about": "Synthetic HR demo team for a fictional company. Not real people or a real company.",
+  "company": "Syarikat Contoh Berhad (fictional)",
+  "department": "Retail Banking Operations",
+  "employees": [
+    { "id": "E01", "name": "Employee A", "currentRole": "bank_teller", "hoursPerWeek": 5, "sectors": ["finance"], "sdgInterests": [8, 10], "skills": { "cash_handling": 3, "customer_service": 3, "data_entry": 2, "spreadsheets": 1, "communication": 2, "fintech": 1 } },
+    { "id": "E02", "name": "Employee B", "currentRole": "bank_teller", "hoursPerWeek": 5, "sectors": ["finance", "education"], "sdgInterests": [4, 5], "skills": { "cash_handling": 3, "customer_service": 2, "communication": 3, "teaching": 1, "ai_literacy": 1 } },
+    { "id": "E03", "name": "Employee C", "currentRole": "data_entry_clerk", "hoursPerWeek": 6, "sectors": ["finance", "tech"], "sdgInterests": [9], "skills": { "data_entry": 3, "spreadsheets": 3, "sql": 1, "data_analysis": 1, "analytical_thinking": 2 } },
+    { "id": "E04", "name": "Employee D", "currentRole": "bookkeeping_clerk", "hoursPerWeek": 6, "sectors": ["finance", "green"], "sdgInterests": [12, 13], "skills": { "bookkeeping": 3, "spreadsheets": 3, "data_analysis": 1, "communication": 1, "sustainability_reporting": 1 } },
+    { "id": "E05", "name": "Employee E", "currentRole": "customer_service_agent", "hoursPerWeek": 4, "sectors": ["finance"], "sdgInterests": [10], "skills": { "customer_service": 3, "communication": 3, "data_entry": 1, "ai_literacy": 1, "resilience": 2 } },
+    { "id": "E06", "name": "Employee F", "currentRole": "admin_assistant", "hoursPerWeek": 5, "sectors": ["business"], "sdgInterests": [8, 17], "skills": { "admin_support": 3, "spreadsheets": 2, "project_management": 1, "communication": 2, "leadership": 1 } },
+    { "id": "E07", "name": "Employee G", "currentRole": "data_entry_clerk", "hoursPerWeek": 8, "sectors": ["tech", "finance"], "sdgInterests": [9, 16], "skills": { "data_entry": 3, "spreadsheets": 2, "python": 1, "cybersecurity": 1, "analytical_thinking": 2 } },
+    { "id": "E08", "name": "Employee H", "currentRole": "bank_teller", "hoursPerWeek": 4, "sectors": ["finance", "business"], "sdgInterests": [8], "skills": { "cash_handling": 3, "customer_service": 2, "fintech": 1, "spreadsheets": 1 } }
+  ]
+}

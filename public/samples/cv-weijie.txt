@@ -1,0 +1,26 @@
+SYNTHETIC SAMPLE CV - NOT A REAL PERSON
+
+WEI JIE (demo persona)
+Penang
+
+PROFILE
+Fresh graduate in Mechanical Engineering, eager to learn and interested in renewable energy and
+electric vehicle systems.
+
+EDUCATION
+Bachelor of Mechanical Engineering (synthetic university), 2026
+Final-year project: Performance analysis of a rooftop solar PV system using Python and Excel.
+Coursework: statistics, thermodynamics, automotive engineering, project management.
+
+EXPERIENCE
+Engineering intern - Fictional Automotive Sdn Bhd (3 months)
+- Assisted with battery pack testing for an electric vehicle prototype
+- Logged sensor data and built charts in Excel; wrote small Python scripts with pandas
+- Problem solving on the production line with the quality team
+
+ACTIVITIES
+- Completed an online course on Coursera (certificate)
+- Team leader, university solar car club
+
+SKILLS
+Python (basic), Excel, SolidWorks, statistics, analytical thinking, teamwork

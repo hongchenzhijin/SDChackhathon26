@@ -1,0 +1,29 @@
+# Continuously tracks AI advancement: rebuilds the trend snapshot every Monday
+# from public APIs and commits it, so the deployed app re-plans automatically.
+name: Refresh AI-trend signals
+
+on:
+  schedule:
+    - cron: '0 2 * * 1'   # Mondays 02:00 UTC (10:00 MYT)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/refresh-trends.js
+      - run: npm test
+      - name: Commit new snapshot
+        run: |
+          git config user.name "trend-bot"
+          git config user.email "trend-bot@users.noreply.github.com"
+          git add public/data/snapshots public/data/context
+          git diff --cached --quiet || git commit -m "data: weekly AI-trend snapshot $(date -u +%F)"
+          git push
