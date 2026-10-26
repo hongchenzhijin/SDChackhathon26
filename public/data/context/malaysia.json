@@ -1,5 +1,5 @@
 {
-  "retrievedAt": "2026-10-19T15:13:21.456Z",
+  "retrievedAt": "2026-10-26T07:39:30.567Z",
   "source": {
     "name": "Department of Statistics Malaysia via data.gov.my",
     "url": "https://data.gov.my/data-catalogue"
@@ -18,7 +18,7 @@
   "skillsUnderemployment": {
     "dataset": "lfs_qtr_sru_age",
     "date": "2026-04-01",
-    "overallRate": 1948.2,
-    "youth15to24Rate": 476.3
+    "overallRate": 35.2,
+    "youth15to24Rate": 74.3
   }
 }

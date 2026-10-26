@@ -1,0 +1,486 @@
+{
+  "id": "2026-10-26",
+  "asOf": "2026-10-26",
+  "generatedAt": "2026-10-26T07:39:23.724Z",
+  "mode": "live",
+  "note": "Live snapshot built from public APIs at the time shown.",
+  "sources": [
+    {
+      "id": "hn",
+      "name": "Hacker News stories (Algolia HN Search API)",
+      "url": "https://hn.algolia.com/api",
+      "kind": "AI & tech discussion momentum",
+      "window": {
+        "recent": [
+          "2026-04-29",
+          "2026-10-26"
+        ],
+        "prior": [
+          "2025-10-31",
+          "2026-04-29"
+        ]
+      },
+      "totals": {
+        "recent": 1602678,
+        "prior": 1571090
+      }
+    },
+    {
+      "id": "arbeitnow",
+      "name": "Arbeitnow Job Board API",
+      "url": "https://www.arbeitnow.com/api/job-board-api",
+      "kind": "Live job postings (EU-focused, incl. remote)",
+      "postings": 1500,
+      "retrievedAt": "2026-10-26T07:39:23.724Z"
+    },
+    {
+      "id": "remotive",
+      "name": "Remotive Remote Jobs API",
+      "url": "https://remotive.com/api/remote-jobs",
+      "kind": "Live remote job postings (global)",
+      "postings": 10,
+      "retrievedAt": "2026-10-26T07:39:23.724Z"
+    },
+    {
+      "id": "wef",
+      "name": "World Economic Forum – Future of Jobs Report 2025",
+      "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
+      "kind": "Baseline skill & job outlook (employer survey, 2025–2030)",
+      "published": "2025-01"
+    }
+  ],
+  "skills": {
+    "ai_literacy": {
+      "hn": {
+        "query": "\"AI tools\"",
+        "recent": 272,
+        "prior": 545
+      },
+      "jobs": {
+        "mentions": 230,
+        "total": 1492,
+        "share": 0.15415549597855227
+      }
+    },
+    "prompt_engineering": {
+      "hn": {
+        "query": "\"prompt engineering\"",
+        "recent": 38,
+        "prior": 142
+      },
+      "jobs": {
+        "mentions": 26,
+        "total": 1492,
+        "share": 0.01742627345844504
+      }
+    },
+    "machine_learning": {
+      "hn": {
+        "query": "\"machine learning\"",
+        "recent": 137,
+        "prior": 218
+      },
+      "jobs": {
+        "mentions": 100,
+        "total": 1492,
+        "share": 0.06702412868632708
+      }
+    },
+    "llm_engineering": {
+      "hn": {
+        "query": "\"AI agents\"",
+        "recent": 2675,
+        "prior": 3255
+      },
+      "jobs": {
+        "mentions": 269,
+        "total": 1492,
+        "share": 0.18029490616621985
+      }
+    },
+    "responsible_ai": {
+      "hn": {
+        "query": "\"AI safety\"",
+        "recent": 174,
+        "prior": 111
+      },
+      "jobs": {
+        "mentions": 138,
+        "total": 1492,
+        "share": 0.09249329758713137
+      }
+    },
+    "data_analysis": {
+      "hn": {
+        "query": "\"data analysis\"",
+        "recent": 43,
+        "prior": 78
+      },
+      "jobs": {
+        "mentions": 115,
+        "total": 1492,
+        "share": 0.07707774798927614
+      }
+    },
+    "statistics": {
+      "hn": {
+        "query": "\"statistics\"",
+        "recent": 126,
+        "prior": 157
+      },
+      "jobs": {
+        "mentions": 47,
+        "total": 1492,
+        "share": 0.03150134048257373
+      }
+    },
+    "data_engineering": {
+      "hn": {
+        "query": "\"data engineering\"",
+        "recent": 24,
+        "prior": 31
+      },
+      "jobs": {
+        "mentions": 164,
+        "total": 1492,
+        "share": 0.10991957104557641
+      }
+    },
+    "sql": {
+      "hn": {
+        "query": "\"SQL\"",
+        "recent": 447,
+        "prior": 637
+      },
+      "jobs": {
+        "mentions": 220,
+        "total": 1492,
+        "share": 0.14745308310991956
+      }
+    },
+    "python": {
+      "hn": {
+        "query": "\"Python\"",
+        "recent": 1510,
+        "prior": 2779
+      },
+      "jobs": {
+        "mentions": 274,
+        "total": 1492,
+        "share": 0.1836461126005362
+      }
+    },
+    "web_dev": {
+      "hn": {
+        "query": "\"web development\"",
+        "recent": 38,
+        "prior": 55
+      },
+      "jobs": {
+        "mentions": 201,
+        "total": 1492,
+        "share": 0.13471849865951743
+      }
+    },
+    "cloud": {
+      "hn": {
+        "query": "\"cloud computing\"",
+        "recent": 8,
+        "prior": 21
+      },
+      "jobs": {
+        "mentions": 266,
+        "total": 1492,
+        "share": 0.17828418230563003
+      }
+    },
+    "cybersecurity": {
+      "hn": {
+        "query": "\"cybersecurity\"",
+        "recent": 287,
+        "prior": 245
+      },
+      "jobs": {
+        "mentions": 62,
+        "total": 1492,
+        "share": 0.04155495978552279
+      }
+    },
+    "ux_design": {
+      "hn": {
+        "query": "\"UX design\"",
+        "recent": 10,
+        "prior": 12
+      },
+      "jobs": {
+        "mentions": 115,
+        "total": 1492,
+        "share": 0.07707774798927614
+      }
+    },
+    "iot": {
+      "hn": {
+        "query": "\"IoT\"",
+        "recent": 65,
+        "prior": 102
+      },
+      "jobs": {
+        "mentions": 106,
+        "total": 1492,
+        "share": 0.07104557640750671
+      }
+    },
+    "fintech": {
+      "hn": {
+        "query": "\"fintech\"",
+        "recent": 37,
+        "prior": 100
+      },
+      "jobs": {
+        "mentions": 158,
+        "total": 1492,
+        "share": 0.10589812332439678
+      }
+    },
+    "digital_marketing": {
+      "hn": {
+        "query": "\"digital marketing\"",
+        "recent": 1,
+        "prior": 9
+      },
+      "jobs": {
+        "mentions": 329,
+        "total": 1492,
+        "share": 0.2205093833780161
+      }
+    },
+    "spreadsheets": {
+      "hn": {
+        "query": "\"spreadsheet\"",
+        "recent": 101,
+        "prior": 165
+      },
+      "jobs": {
+        "mentions": 169,
+        "total": 1492,
+        "share": 0.11327077747989277
+      }
+    },
+    "renewable_energy": {
+      "hn": {
+        "query": "\"renewable energy\"",
+        "recent": 20,
+        "prior": 34
+      },
+      "jobs": {
+        "mentions": 18,
+        "total": 1492,
+        "share": 0.012064343163538873
+      }
+    },
+    "sustainability_reporting": {
+      "hn": {
+        "query": "\"sustainability\"",
+        "recent": 60,
+        "prior": 176
+      },
+      "jobs": {
+        "mentions": 56,
+        "total": 1492,
+        "share": 0.03753351206434316
+      }
+    },
+    "ev_tech": {
+      "hn": {
+        "query": "\"electric vehicle\"",
+        "recent": 21,
+        "prior": 33
+      },
+      "jobs": {
+        "mentions": 27,
+        "total": 1492,
+        "share": 0.018096514745308313
+      }
+    },
+    "precision_agriculture": {
+      "hn": {
+        "query": "\"agriculture\"",
+        "recent": 15,
+        "prior": 32
+      },
+      "jobs": {
+        "mentions": 11,
+        "total": 1492,
+        "share": 0.007372654155495978
+      }
+    },
+    "climate_data": {
+      "hn": {
+        "query": "\"climate change\"",
+        "recent": 100,
+        "prior": 100
+      },
+      "jobs": {
+        "mentions": 27,
+        "total": 1492,
+        "share": 0.018096514745308313
+      }
+    },
+    "health_informatics": {
+      "hn": {
+        "query": "\"healthcare\"",
+        "recent": 189,
+        "prior": 274
+      },
+      "jobs": {
+        "mentions": 113,
+        "total": 1492,
+        "share": 0.07573726541554959
+      }
+    },
+    "caregiving": {
+      "hn": null,
+      "jobs": {
+        "mentions": 44,
+        "total": 1492,
+        "share": 0.029490616621983913
+      }
+    },
+    "analytical_thinking": {
+      "hn": null,
+      "jobs": {
+        "mentions": 296,
+        "total": 1492,
+        "share": 0.19839142091152814
+      }
+    },
+    "creative_thinking": {
+      "hn": null,
+      "jobs": {
+        "mentions": 414,
+        "total": 1492,
+        "share": 0.2774798927613941
+      }
+    },
+    "resilience": {
+      "hn": null,
+      "jobs": {
+        "mentions": 812,
+        "total": 1492,
+        "share": 0.5442359249329759
+      }
+    },
+    "lifelong_learning": {
+      "hn": null,
+      "jobs": {
+        "mentions": 300,
+        "total": 1492,
+        "share": 0.20107238605898123
+      }
+    },
+    "leadership": {
+      "hn": null,
+      "jobs": {
+        "mentions": 524,
+        "total": 1492,
+        "share": 0.3512064343163539
+      }
+    },
+    "communication": {
+      "hn": null,
+      "jobs": {
+        "mentions": 983,
+        "total": 1492,
+        "share": 0.6588471849865952
+      }
+    },
+    "project_management": {
+      "hn": {
+        "query": "\"project management\"",
+        "recent": 64,
+        "prior": 88
+      },
+      "jobs": {
+        "mentions": 153,
+        "total": 1492,
+        "share": 0.10254691689008043
+      }
+    },
+    "teaching": {
+      "hn": {
+        "query": "\"edtech\"",
+        "recent": 17,
+        "prior": 27
+      },
+      "jobs": {
+        "mentions": 39,
+        "total": 1492,
+        "share": 0.02613941018766756
+      }
+    },
+    "customer_service": {
+      "hn": {
+        "query": "\"customer service\"",
+        "recent": 26,
+        "prior": 37
+      },
+      "jobs": {
+        "mentions": 194,
+        "total": 1492,
+        "share": 0.13002680965147453
+      }
+    },
+    "data_entry": {
+      "hn": {
+        "query": "\"data entry\"",
+        "recent": 11,
+        "prior": 27
+      },
+      "jobs": {
+        "mentions": 7,
+        "total": 1492,
+        "share": 0.004691689008042895
+      }
+    },
+    "cash_handling": {
+      "hn": null,
+      "jobs": {
+        "mentions": 0,
+        "total": 1492,
+        "share": 0
+      }
+    },
+    "bookkeeping": {
+      "hn": {
+        "query": "\"bookkeeping\"",
+        "recent": 18,
+        "prior": 20
+      },
+      "jobs": {
+        "mentions": 50,
+        "total": 1492,
+        "share": 0.03351206434316354
+      }
+    },
+    "admin_support": {
+      "hn": null,
+      "jobs": {
+        "mentions": 2,
+        "total": 1492,
+        "share": 0.0013404825737265416
+      }
+    },
+    "graphic_production": {
+      "hn": {
+        "query": "\"graphic design\"",
+        "recent": 16,
+        "prior": 19
+      },
+      "jobs": {
+        "mentions": 36,
+        "total": 1492,
+        "share": 0.024128686327077747
+      }
+    }
+  }
+}
